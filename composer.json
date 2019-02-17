@@ -11,7 +11,6 @@
         {
             "name": ":author_name",
             "email": ":author_email",
-            "homepage": "https://rmarshall9n.be",
             "role": "Developer"
         }
     ],
@@ -45,7 +44,7 @@
                 "Rmarshall9n\\Skeleton\\SkeletonServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Rmarshall9n\\Skeleton\\SkeletonFacade"
+                "Skeleton": "Rmarshall9n\\Skeleton\\Facades\\SkeletonFacade"
             }
         }
     }
