@@ -1,0 +1,52 @@
+{
+    "name": "rmarshall9n/:package_name",
+    "description": ":package_description",
+    "keywords": [
+        "rmarshall9n",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/rmarshall9n/:package_name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "homepage": "https://rmarshall9n.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rmarshall9n\\Skeleton\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rmarshall9n\\Skeleton\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rmarshall9n\\Skeleton\\SkeletonServiceProvider"
+            ],
+            "aliases": {
+                "Skeleton": "Rmarshall9n\\Skeleton\\SkeletonFacade"
+            }
+        }
+    }
+}
